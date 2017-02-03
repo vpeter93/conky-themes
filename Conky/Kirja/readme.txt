@@ -1,0 +1,35 @@
+----------------------------------------------------------------------------------------
+Kirja System monitoring cat theme with XFCE4 logo
+Created by Péter Varga
+----------------------------------------------------------------------------------------
+In English
+----------------------------------------------------------------------------------------
+Install:
+----------------------------------------------------------------------------------------
+Use this command in the terminal:
+sudo apt-get install conky-all
+
+Copy the Conky folder to the /home/username folder.
+You should change wlp3s0 to your Ethernet adapter name in .conkyrc file. 
+Use ifconfig command in the terminal and copy your ethernet adapter name.
+Change wlp3s0 to your ethernet adapter name in the code.
+Copy the ConkyAutostart file to the /usr/share/applications and /etc/xdg/autostart 
+folders. 
+Conky will autostart.
+
+----------------------------------------------------------------------------------------
+Magyarul
+----------------------------------------------------------------------------------------
+Kirja Rendszerfigyelő macska téma XFCE4 logóval
+Készítette Varga Péter
+----------------------------------------------------------------------------------------
+Telepítés:
+----------------------------------------------------------------------------------------
+Írd be a következő parancsot a terminálba:
+sudo apt-get install conky-all
+
+A Conky mappát egy az egyben tegyük a /home/felhasználónév mappába.
+Ki kll cserélned a wlp3s0 szöveged a .conkyrc fájlban a saját ethernet adaptered nevére.
+Hogy megtudd mi az ethernet adaptered neve használd a terminálban az ifoncif parancsot.
+Hogy a conky automatikusan induljon a rendszerrel, a ConkyAutostart fájlt másoljuk
+be az /usr/share/applications és a /etc/xdg/autostart mappákba.

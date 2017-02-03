@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Conky Autostart
+Exec=/home/peter/Conky/Kirja/startconky.sh
+Path=~
+Type=Application
+Terminal=false

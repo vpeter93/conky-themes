@@ -1,0 +1,99 @@
+#--------------------------------------------------------------------
+# Kirja System monitoring cat theme with XFCE logo
+# 
+# Created by Varga Péter
+#
+# You should change wlp3s0 to your Ethernet adapter name in the code. 
+# Use ifconfig command in the terminal
+# 
+#--------------------------------------------------------------------
+background yes
+update_interval 3
+update_run_times 0
+total_run_times 0
+
+cpu_avg_samples 2
+net_avg_samples 2
+
+double_buffer yes
+no_buffers yes
+
+tex_buffer_size 1024
+imlib_cache_size 0
+
+own_window yes
+own_window_type normal  ##-- other options are: override/dock/desktop/panel --##
+own_window_transparent yes
+own_window_argb_visual no
+own_window_argb_value 0
+own_window_colour FFFFFF
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+
+border_inner_margin 0
+border_outer_margin 0
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+show_graph_scale no
+show_graph_range no
+top_name_width 7
+default_graph_size 26 80
+
+minimum_size 300 768
+maximum_width 300
+alignment top_right
+gap_x 0
+gap_y 0
+
+use_xft yes
+override_utf8_locale yes
+xftfont Droid Sans:size=8
+xftalpha 0.5
+uppercase no
+use_spacer none
+
+default_outline_color AAAAAA
+default_shade_color AAAAAA
+default_color gold
+
+short_units yes
+pad_percents 2
+
+TEXT
+${image ~/Conky/Kirja/img/fa.jpg -p 0,0 -s 300x768}
+${image ~/Conky/Kirja/img/logo.png -p 110,10 -s 60x60}
+${image ~/Conky/Kirja/img/Tigriskebal.png -p 50,595 -s 250x160}
+
+
+
+${font Droid Sans :size=11}${alignc}${color}${exec cat /etc/issue.net} ${machine}${font}${color}
+${font Droid Sans :size=10}${alignc}Kernel : ${kernel}${font}${color}
+${goto 50}${font Decker :size=50}${time %H:%M}${font}
+${goto 72}${font Decker :size=15}${time %b %d %a}${font}
+
+
+${goto 8}CPU: ${color}${goto 78}${cpubar 5,36}  ${freq_g} Ghz ${cpu cpu0}%
+${goto 8}RAM: ${color}${goto 78}${membar 5,36}  ${mem} / ${memmax} ${memperc}%
+${goto 8}File system: ${color}${fs_bar 5,36}  ${fs_used} / ${fs_size} ${fs_used_perc}% ${fs_type} 
+${goto 8}Uptime: ${color}${goto 78}${uptime_short}
+${hr}
+${goto 8}PROCESS ${goto 80}RAM ${goto 120}PROCESS ${goto 200} CPU %
+${hr}
+${goto 8}${top_mem name 1}${goto 80}${top_mem mem_res 1}${goto 120}${top name 1}${goto 200}${top cpu 1}%
+${goto 8}${top_mem name 2}${goto 80}${top_mem mem_res 2}${goto 120}${top name 2}${goto 200}${top cpu 2}%
+${goto 8}${top_mem name 3}${goto 80}${top_mem mem_res 3}${goto 120}${top name 3}${goto 200}${top cpu 3}%
+${goto 8}${top_mem name 4}${goto 80}${top_mem mem_res 4}${goto 120}${top name 4}${goto 200}${top cpu 4}%
+${goto 8}${top_mem name 5}${goto 80}${top_mem mem_res 5}${goto 120}${top name 5}${goto 200}${top cpu 5}%
+${hr}
+${if_existing /proc/net/route wlp3s0}${font}
+${goto 40}Up : ${upspeed wlp3s0}${goto 155}Down : ${downspeed wlp3s0}
+${goto 40}${upspeedgraph wlp3s0 26,80 00FF9F 00FF9F}${goto 150}${downspeedgraph enp0s7 26,80 00FF9F 00FF9F}
+${goto 40}Sent : ${totalup wlp3s0}${goto 152}Received : ${totaldown wlp3s0}${color}
+${else}
+${goto 40}Status : Network Disconnected${color}
+${image ~/Conky/Kirja/img/off.png -p 100,500 -s 50x50}
+${else}
+${goto 40}Status : Network Connected${color}
+${image ~/Conky/Kirja/img/on.png -p 100,500 -s 50x50}
+${endif}
