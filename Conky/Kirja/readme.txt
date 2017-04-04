@@ -62,7 +62,7 @@ sudo apt-get install git
 git clone https://github.com/vpeter93/conky-themes
 
 A Conky mappát egy az egyben tegyük a /home/felhasználónév mappába.
-Ki kll cserélned a wlp3s0 szöveged a .conkyrc fájlban a saját ethernet adaptered nevére.
+Ki kell cserélned a wlp3s0 szöveged a .conkyrc fájlban a saját ethernet adaptered nevére.
 Hogy megtudd mi az ethernet adaptered neve használd a terminálban az ifoncif parancsot.
 Hogy a conky automatikusan induljon a rendszerrel, a ConkyAutostart fájlt másoljuk
 be az /usr/share/applications és a /etc/xdg/autostart mappákba, 
@@ -70,4 +70,4 @@ majd másoljuk a startconky.sh fájlt a /bin mappába.
 ----------------------------------------------------------------------------------------
 Eltávolítás:
 ----------------------------------------------------------------------------------------
-Futtasd az uninstall.sh fájlt a terminál és töröld a home mappából a Conky mappát.
+Futtasd az uninstall.sh fájlt a terminálban és töröld a home mappából a Conky mappát.
