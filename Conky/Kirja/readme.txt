@@ -6,8 +6,9 @@ In English
 ----------------------------------------------------------------------------------------
 Automatic Install:
 ----------------------------------------------------------------------------------------
-Use this command in the terminal:
+Use this commands in the terminal:
 sudo apt-get install conky-all
+git clone https://github.com/vpeter93/conky-themes
 
 Copy the Conky folder to the /home/username folder.
 You should change wlp3s0 to your Ethernet adapter name in .conkyrc file. 
@@ -40,8 +41,9 @@ Készítette Varga Péter
 ----------------------------------------------------------------------------------------
 Automatikus Telepítés:
 ----------------------------------------------------------------------------------------
-Írd be a következő parancsot a terminálba:
+Írd be a következő parancsokat a terminálba:
 sudo apt-get install conky-all
+git clone https://github.com/vpeter93/conky-themes
 
 A Conky mappát egy az egyben tegyük a /home/felhasználónév mappába.
 Ki kll cserélned a wlp3s0 szöveged a .conkyrc fájlban a saját ethernet adaptered nevére.
