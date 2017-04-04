@@ -1,6 +1,9 @@
 [Desktop Entry]
-Name=Conky Autostart
-Exec=/home/peter/Conky/Kirja/startconky.sh
-Path=~
+Version=1.0
 Type=Application
+Name=Conky Autostart
+Comment=Conky Autostart
+Exec=/home/peter/Conky/Kirja/startconky.sh
+Path=/home/peter/Conky/Kirja
 Terminal=false
+StartupNotify=false
