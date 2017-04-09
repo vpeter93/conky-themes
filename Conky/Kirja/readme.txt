@@ -4,12 +4,12 @@ Created by Péter Varga
 ----------------------------------------------------------------------------------------
 In English
 ----------------------------------------------------------------------------------------
-This video is illustrate the automatic install in a Debian base distribution:
+This is a step-by-step video to the automatic install in a Debian base distribution:
 https://www.youtube.com/watch?v=8-SdCpFgzt4
 ----------------------------------------------------------------------------------------
 Automatic Install:
 ----------------------------------------------------------------------------------------
-Use theese commands in the terminal:
+Use theese commands in the terminal (in Debian based distros (Ubuntu, Linux Mint...):
 sudo apt-get install conky-all
 sudo apt-get install git
 git clone https://github.com/vpeter93/conky-themes
