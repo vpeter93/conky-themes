@@ -4,6 +4,9 @@ Created by Péter Varga
 ----------------------------------------------------------------------------------------
 In English
 ----------------------------------------------------------------------------------------
+This video is illustrate the automatic install in a Debian base distribution:
+https://www.youtube.com/watch?v=8-SdCpFgzt4
+----------------------------------------------------------------------------------------
 Automatic Install:
 ----------------------------------------------------------------------------------------
 Use theese commands in the terminal:
@@ -20,7 +23,7 @@ Conky will autostart.
 ----------------------------------------------------------------------------------------
 Manual Install:
 ----------------------------------------------------------------------------------------
-Use theese commands in the terminal:
+Use theese commands in the terminal (in Debian based distros (Ubuntu, Linux Mint...):
 sudo apt-get install conky-all
 sudo apt-get install git
 git clone https://github.com/vpeter93/conky-themes
@@ -30,7 +33,7 @@ You should change wlp3s0 to your Ethernet adapter name in .conkyrc file.
 Use ifconfig command in the terminal and copy your ethernet adapter name.
 Change wlp3s0 to your ethernet adapter name in the code.
 Copy the ConkyAutostart file to the /usr/share/applications and /etc/xdg/autostart 
-folders. Cpoy the startconky.sh file to /bin folder.
+folders. Copy the startconky.sh file to /bin folder.
 Conky will autostart.
 ----------------------------------------------------------------------------------------
 Uninstall:
@@ -42,9 +45,12 @@ Magyarul
 Kirja Rendszerfigyelő macska téma XFCE4 logóval
 Készítette Varga Péter
 ----------------------------------------------------------------------------------------
+A következő videó végigvezet az automatikus telepítésen:
+https://www.youtube.com/watch?v=8-SdCpFgzt4
+----------------------------------------------------------------------------------------
 Automatikus Telepítés:
 ----------------------------------------------------------------------------------------
-Írd be a következő parancsokat a terminálba:
+Írd be a következő parancsokat a terminálba (Debian alapú disztribúciókon (Ubuntu, Linux Mint...):
 sudo apt-get install conky-all
 sudo apt-get install git
 git clone https://github.com/vpeter93/conky-themes
@@ -56,7 +62,7 @@ Futtasd terminálban az install.sh fájlt. Ez után automatikusan elindul a rend
 ----------------------------------------------------------------------------------------
 Kézi Telepítés:
 ----------------------------------------------------------------------------------------
-Írd be a következő parancsokat a terminálba:
+Írd be a következő parancsokat a terminálba (Debian alapú disztribúciókon (Ubuntu, Linux Mint...):
 sudo apt-get install conky-all
 sudo apt-get install git
 git clone https://github.com/vpeter93/conky-themes
